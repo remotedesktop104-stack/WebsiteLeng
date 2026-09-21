@@ -1,64 +1,488 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
+
 <head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
     <title>The One Stop Shop</title>
 
-    <!-- League Spartan font -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=League+Spartan:wght@100..900&display=swap" rel="stylesheet">
 
-    <!-- Your CSS -->
+    <link
+        href="https://fonts.googleapis.com/css2?family=League+Spartan:wght@100..900&display=swap"
+        rel="stylesheet"
+    >
+
     <link rel="stylesheet" href="style.css">
+
 </head>
 
 <body>
 
-    <!-- HOME SECTION -->
-    <section class="hero">
-        <div class="container">
-            <h1>The One Stop Shop.</h1>
-            <p>for all your needs.</p>
-            <img src="myphoto.jpg" alt="ma dawg">
+
+    <!-- =========================
+         NAVIGATION
+    ========================== -->
+
+    <nav class="navbar">
+
+        <div class="nav-logo">
+            THE ONE STOP SHOP
         </div>
+
+        <div class="nav-links">
+
+            <a href="#home">Home</a>
+            <a href="#staff">Staff</a>
+            <a href="#services">What We Do</a>
+            <a href="#gallery">Gallery</a>
+            <a href="#about">About</a>
+            <a href="#contact">Contact</a>
+
+        </div>
+
+    </nav>
+
+
+
+    <!-- =========================
+         HERO
+    ========================== -->
+
+    <section class="hero" id="home">
+
+        <div class="container">
+
+            <h1>
+                The One Stop Shop.
+            </h1>
+
+            <p>
+                Its what we do worst.
+            </p>
+
+            <img
+                src="myphoto.jpg"
+                alt="The One Stop Shop"
+            >
+
+            <div class="scroll-hint">
+
+                <span>
+                    Scroll down
+                </span>
+
+                <span class="arrow">
+                    ↓
+                </span>
+
+            </div>
+
+        </div>
+
     </section>
 
 
-    <!-- GALLERY SECTION -->
-    <section class="gallery">
 
-        <h2>Meet the Staff</h2>
+    <!-- =========================
+         MEET THE STAFF
+    ========================== -->
+
+    <section class="staff" id="staff">
+
+        <h2>
+            Meet the Staff
+        </h2>
+
+        <p class="section-intro">
+            Six highly questionable individuals keeping the shop operational.
+        </p>
+
+
+        <div class="staff-grid">
+
+
+            <!-- ROTISSERIE JOE -->
+
+            <div class="staff-card">
+
+                <img
+                    class="staff-image"
+                    src="image6.jpg"
+                    alt="Rotisserie Joe"
+                >
+
+                <h3>
+                    Rotisserie Joe
+                </h3>
+
+                <h4>
+                    Senior Chicken Rotation Engineer
+                </h4>
+
+                <p>
+                    Responsible for accounting. Has never actually eaten chicken.
+                </p>
+
+            </div>
+
+
+
+            <!-- UNICORN -->
+
+            <div class="staff-card">
+
+                <img
+                    class="staff-image"
+                    src="image1.jpg"
+                    alt="Unicorn"
+                >
+
+                <h3>
+                    Unicorn
+                </h3>
+
+                <h4>
+                    Head of Unlicensed Magic Operations
+                </h4>
+
+                <p>
+                    Sits pretty to make customers come in asking for glitter and shit. idk.
+                </p>
+
+            </div>
+
+
+
+            <!-- RAINBOW DASH -->
+
+            <div class="staff-card">
+
+                <img
+                    class="staff-image"
+                    src="image2.jpg"
+                    alt="Rainbow Dash"
+                >
+
+                <h3>
+                    Rainbow Dash
+                </h3>
+
+                <h4>
+                    Director of Unnecessary Speed
+                </h4>
+
+                <p>
+                    Has been banned from the staff corridors
+                    14 times for snorting speed. Still holds
+                    the company record for fastest kill.
+                </p>
+
+            </div>
+
+
+
+            <!-- POWERPUFF GIRLS -->
+
+            <div class="staff-card">
+
+                <img
+                    class="staff-image"
+                    src="image3.jpg"
+                    alt="Powerpuff Girls"
+                >
+
+                <h3>
+                    Powerpuff Girls
+                </h3>
+
+                <h4>
+                    Emergency Coding
+                </h4>
+
+                <p>
+                    Just codes random shit and hope it works. If it doesnt then ah well it is what it is.
+                </p>
+
+            </div>
+
+
+
+            <!-- YANIKO SATOU -->
+
+            <div class="staff-card">
+
+                <img
+                    class="staff-image"
+                    src="image4.gif"
+                    alt="Yaniko Satou"
+                >
+
+                <h3>
+                    Yaniko Satou
+                </h3>
+
+                <h4>
+                    Chief Smoker
+                </h4>
+
+                <p>
+                    Nobody knows exactly what Yaniko does.
+                    She just smokes cigs and tries to not destroy the company.
+                </p>
+
+            </div>
+
+
+
+            <!-- CLARK -->
+
+            <div class="staff-card">
+
+                <img
+                    class="staff-image"
+                    src="image5.jpg"
+                    alt="Clark"
+                >
+
+                <h3>
+                    Clark
+                </h3>
+
+                <h4>
+                    Department of Backrooms
+                </h4>
+
+                <p>
+                    Investigates problems that nobody else
+                    understands. Hes just a monster atp.
+                </p>
+
+            </div>
+
+
+        </div>
+
+    </section>
+
+
+
+    <!-- =========================
+         WHAT WE DO
+    ========================== -->
+
+    <section class="services" id="services">
+
+        <h2>
+            What We Do
+        </h2>
+
+        <p class="section-intro">
+            Nobody really knows. But here's what we've been told.
+        </p>
+
+
+        <div class="service-grid">
+
+
+            <div class="service-card">
+
+                <div class="service-icon">
+                    ⚙
+                </div>
+
+                <h3>
+                    Technology
+                </h3>
+
+                <p>
+                    We make things that probably shouldn't work.
+                </p>
+
+            </div>
+
+
+            <div class="service-card">
+
+                <div class="service-icon">
+                    ?
+                </div>
+
+                <h3>
+                    Consulting
+                </h3>
+
+                <p>
+                    Ask us a question. We cant care less.
+                </p>
+
+            </div>
+
+
+            <div class="service-card">
+
+                <div class="service-icon">
+                    ★
+                </div>
+
+                <h3>
+                    Other
+                </h3>
+
+                <p>
+                    We're still figuring this one out.
+                </p>
+
+            </div>
+
+
+        </div>
+
+    </section>
+
+
+
+    <!-- =========================
+         GALLERY
+    ========================== -->
+
+    <section class="gallery" id="gallery">
+
+        <h2>
+            Our Gallery
+        </h2>
+
+        <p class="section-intro">
+            A collection of things we've found along the way.
+        </p>
+
 
         <div class="image-grid">
 
-            <div class="gallery-item">
-                <img src="image1.jpg" alt="Image 1"
-                     onclick="openImage(this, 'Unicorn who does animation for the website')">
-            </div>
 
             <div class="gallery-item">
-                <img src="image2.jpg" alt="Image 2"
-                     onclick="openImage(this, 'Rainbow Dash who clears the weather for us')">
+
+                <img
+                    src="image1.jpg"
+                    alt="Image 1"
+                    onclick="openImage(this, 'My First Image')"
+                >
+
             </div>
 
-            <div class="gallery-item">
-                <img src="image3.jpg" alt="Image 3"
-                     onclick="openImage(this, 'power puff girls who codes the website with powerpuff power')">
-            </div>
 
             <div class="gallery-item">
-                <img src="image4.gif" alt="Image 4"
-                     onclick="openImage(this, 'Yaniko Satou who smokes all our cigs')">
+
+                <img
+                    src="image2.jpg"
+                    alt="Image 2"
+                    onclick="openImage(this, 'My Second Image')"
+                >
+
             </div>
 
-            <div class="gallery-item">
-                <img src="image5.jpg" alt="Image 5"
-                     onclick="openImage(this, 'Clark who defends the company')">
-            </div>
 
             <div class="gallery-item">
-                <img src="image6.jpg" alt="Image 6"
-                     onclick="openImage(this, 'Rotisserie Joe in accounting')">
+
+                <img
+                    src="image3.jpg"
+                    alt="Image 3"
+                    onclick="openImage(this, 'Cool Picture')"
+                >
+
+            </div>
+
+
+            <div class="gallery-item">
+
+                <img
+                    src="image4.gif"
+                    alt="Image 4"
+                    onclick="openImage(this, 'Another Picture')"
+                >
+
+            </div>
+
+
+            <div class="gallery-item">
+
+                <img
+                    src="image5.jpg"
+                    alt="Image 5"
+                    onclick="openImage(this, 'Epic Image')"
+                >
+
+            </div>
+
+
+            <div class="gallery-item">
+
+                <img
+                    src="image6.jpg"
+                    alt="Image 6"
+                    onclick="openImage(this, 'Last Picture')"
+                >
+
+            </div>
+
+
+        </div>
+
+    </section>
+
+
+
+    <!-- =========================
+         ABOUT
+    ========================== -->
+
+    <section class="about" id="about">
+
+        <h2>
+            About The Shop
+        </h2>
+
+
+        <div class="about-content">
+
+            <p>
+                The One Stop Shop was established in 1997 with one
+                simple goal: provide questionable solutions to almost
+                any problem.
+            </p>
+
+            <p>
+                Since then, we've expanded our operations into
+                technology, consulting, research and whatever else
+                we happen to be doing that day.
+            </p>
+
+
+            <div class="stats">
+
+                <div>
+                    <strong>1997</strong>
+                    <span>Established</span>
+                </div>
+
+                <div>
+                    <strong>6</strong>
+                    <span>Employees</span>
+                </div>
+
+                <div>
+                    <strong>12</strong>
+                    <span>Customers</span>
+                </div>
+
+                <div>
+                    <strong>847</strong>
+                    <span>Complaints</span>
+                </div>
+
             </div>
 
         </div>
@@ -66,32 +490,133 @@
     </section>
 
 
-    <!-- LARGE IMAGE VIEWER -->
-    <div id="imageViewer" class="image-viewer" onclick="closeImage()">
 
-        <div class="viewer-content" onclick="event.stopPropagation()">
+    <!-- =========================
+         CONTACT
+    ========================== -->
+
+    <section class="contact" id="contact">
+
+        <h2>
+            Contact Us
+        </h2>
+
+        <p>
+            Need something? Don't know what you're doing?
+            Neither do we.
+        </p>
+
+
+        <div class="contact-box">
+
+            <p>
+                <strong>Email:</strong>
+                definitelyreal@onestopshop.com
+            </p>
+
+            <p>
+                <strong>Phone:</strong>
+                0000 000 0000
+            </p>
+
+            <p>
+                <strong>Location:</strong>
+                Somewhere underground
+            </p>
+
+        </div>
+
+
+        <div class="status">
+
+            <span class="status-dot"></span>
+
+            Status:
+            <strong>ONLINE</strong>
+
+        </div>
+
+    </section>
+
+
+
+    <!-- =========================
+         FOOTER
+    ========================== -->
+
+    <footer>
+
+        <h3>
+            THE ONE STOP SHOP
+        </h3>
+
+        <p>
+            © 2026 The One Stop Shop
+        </p>
+
+        <p>
+            Definitely a real business.
+        </p>
+
+    </footer>
+
+
+
+    <!-- =========================
+         IMAGE VIEWER
+    ========================== -->
+
+    <div
+        id="imageViewer"
+        class="image-viewer"
+        onclick="closeImage()"
+    >
+
+        <div
+            class="viewer-content"
+            onclick="event.stopPropagation()"
+        >
 
             <h2 id="imageTitle"></h2>
 
-            <img id="largeImage" src="" alt="">
+            <img
+                id="largeImage"
+                src=""
+                alt=""
+            >
 
         </div>
 
     </div>
 
 
-    <!-- JAVASCRIPT -->
+
+    <!-- =========================
+         JAVASCRIPT
+    ========================== -->
+
     <script>
+
         function openImage(image, title) {
+
             document.getElementById("imageViewer").style.display = "flex";
+
             document.getElementById("largeImage").src = image.src;
+
             document.getElementById("imageTitle").textContent = title;
+
         }
+
 
         function closeImage() {
+
             document.getElementById("imageViewer").style.display = "none";
+
         }
+
     </script>
 
+
 </body>
+
 </html>
