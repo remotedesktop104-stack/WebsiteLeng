@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>The One Stop Shop</title>
+
+    <!-- League Spartan font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=League+Spartan:wght@100..900&display=swap" rel="stylesheet">
+
+    <!-- Your CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- HOME SECTION -->
+    <section class="hero">
+        <div class="container">
+            <h1>The One Stop Shop.</h1>
+            <p>wagwan mushy peas. Welcome to the underground.</p>
+            <img src="myphoto.jpg" alt="ma dawg">
+        </div>
+    </section>
+
+
+    <!-- GALLERY SECTION -->
+    <section class="gallery">
+
+        <h2>My Gallery</h2>
+
+        <div class="image-grid">
+
+            <div class="gallery-item">
+                <img src="image1.jpg" alt="Image 1"
+                     onclick="openImage(this, 'Unicorn who does animation for the website')">
+            </div>
+
+            <div class="gallery-item">
+                <img src="image2.jpg" alt="Image 2"
+                     onclick="openImage(this, 'Rainbow Dash who clears the weather for us')">
+            </div>
+
+            <div class="gallery-item">
+                <img src="image3.jpg" alt="Image 3"
+                     onclick="openImage(this, 'power puff girls who codes the website with powerpuff power')">
+            </div>
+
+            <div class="gallery-item">
+                <img src="image4.gif" alt="Image 4"
+                     onclick="openImage(this, 'Yaniko Satou who smokes all our cigs')">
+            </div>
+
+            <div class="gallery-item">
+                <img src="image5.jpg" alt="Image 5"
+                     onclick="openImage(this, 'Clark who defends the company')">
+            </div>
+
+            <div class="gallery-item">
+                <img src="image6.jpg" alt="Image 6"
+                     onclick="openImage(this, 'Rotisserie Joe in accounting')">
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- LARGE IMAGE VIEWER -->
+    <div id="imageViewer" class="image-viewer" onclick="closeImage()">
+
+        <div class="viewer-content" onclick="event.stopPropagation()">
+
+            <h2 id="imageTitle"></h2>
+
+            <img id="largeImage" src="" alt="">
+
+        </div>
+
+    </div>
+
+
+    <!-- JAVASCRIPT -->
+    <script>
+        function openImage(image, title) {
+            document.getElementById("imageViewer").style.display = "flex";
+            document.getElementById("largeImage").src = image.src;
+            document.getElementById("imageTitle").textContent = title;
+        }
+
+        function closeImage() {
+            document.getElementById("imageViewer").style.display = "none";
+        }
+    </script>
+
+</body>
+</html>
